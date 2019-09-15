@@ -30,8 +30,8 @@ public class ShowSingleRecordActivity extends AppCompatActivity {
     String ParseResult ;
     HashMap<String,String> ResultHash = new HashMap<>();
     String FinalJSonObject ;
-    TextView ROOM_NO, ROOM_NAME, PRICE, ROOM_DETAILS;
-    String Room_NoHolder, RoomNameHolder, PriceHolder, Room_DetailsHolder;
+    TextView ROOM_NO, ROOM_NAME, PRICE, ROOM_DETAILS,STATUS;
+    String Room_NoHolder, RoomNameHolder, PriceHolder, Room_DetailsHolder,StatusHolder;
     String TempItem;
     ProgressDialog progressDialog2;
 
@@ -46,6 +46,7 @@ public class ShowSingleRecordActivity extends AppCompatActivity {
         ROOM_NAME = (TextView)findViewById(R.id.textName);
         PRICE = (TextView)findViewById(R.id.price);
         ROOM_DETAILS = (TextView)findViewById(R.id.room_details);
+        STATUS=(TextView)findViewById(R.id.status);
         view_rooms =(Button)findViewById(R.id.book_room);
 
 
@@ -180,6 +181,7 @@ public class ShowSingleRecordActivity extends AppCompatActivity {
                             RoomNameHolder = jsonObject.getString("room_name").toString() ;
                             Room_DetailsHolder = jsonObject.getString("room_details").toString();
                             PriceHolder = jsonObject.getString("price").toString();
+                            StatusHolder=jsonObject.getString("status").toString();
 
                         }
                     }
@@ -206,6 +208,7 @@ public class ShowSingleRecordActivity extends AppCompatActivity {
             ROOM_NAME.setText(RoomNameHolder);
             ROOM_DETAILS.setText(Room_DetailsHolder);
             PRICE.setText(PriceHolder);
+            STATUS.setText(StatusHolder);
 
         }
     }
