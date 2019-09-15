@@ -23,7 +23,7 @@ public class ShowSingleRecordActivity extends AppCompatActivity {
     Button view_rooms;
 
     // Http Url For Filter Student Data from Id Sent from previous activity.
-    String HttpURL = "http://192.168.43.131/HostelYangu/single_room.php";
+    String HttpURL = "http://192.168.100.3:9500/single_room.php";
 
     String finalResult ;
     HashMap<String,String> hashMap = new HashMap<>();
@@ -127,7 +127,7 @@ public class ShowSingleRecordActivity extends AppCompatActivity {
             @Override
             protected String doInBackground(String... params) {
 
-                //ResultHash.put("RoomName",params[0]);
+                ResultHash.put("RoomName",params[0]);
 
                 ParseResult = httpParse.postRequest(ResultHash, HttpURL);
 

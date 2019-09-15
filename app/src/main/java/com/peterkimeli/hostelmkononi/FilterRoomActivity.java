@@ -42,7 +42,7 @@ public class FilterRoomActivity extends AppCompatActivity {
     String Result ;
     ListView SubjectListView;
     ProgressDialog pDialog;
-    String HttpURL = "http://192.168.43.131/HostelYangu/filter_room.php";
+    String HttpURL = "http://192.168.100.3:9500/filter_room.php";
     String ParseResult ;
     HashMap<String,String> ResultHash = new HashMap<>();
     URL url;
@@ -75,6 +75,7 @@ public class FilterRoomActivity extends AppCompatActivity {
 
                 // TODO Auto-generated method stub
                 Intent intent=new Intent(FilterRoomActivity.this,ShowSingleRecordActivity.class);
+                intent.putExtra("ListViewValue",listString.get(position));
                 startActivity(intent);
                 Toast.makeText(FilterRoomActivity.this, listString.get(position).toString(),Toast.LENGTH_LONG).show();
 

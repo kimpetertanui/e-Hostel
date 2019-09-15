@@ -23,7 +23,7 @@ public class AllHostelsActivity extends AppCompatActivity {
 
     ListView HostelsListView;
     ProgressBar progressBar;
-    String HttpUrl = "http://192.168.43.131/HostelYangu/Allhostels.php";
+    String HttpUrl = "http://192.168.100.3:9500/Allhostels.php";
     List<String> IdList = new ArrayList<>();
 
     @Override
@@ -68,7 +68,7 @@ public class AllHostelsActivity extends AppCompatActivity {
 
         String JSonResult;
 
-        List<Hostel> HostelList;
+        List<Hostel> HostelList=new ArrayList<Hostel>();;
 
         public GetHttpResponse(Context context)
         {
@@ -104,8 +104,6 @@ public class AllHostelsActivity extends AppCompatActivity {
                             JSONObject jsonObject;
 
                             Hostel hostel;
-
-                            HostelList = new ArrayList<Hostel>();
 
                             for(int i=0; i<jsonArray.length(); i++)
                             {
@@ -149,11 +147,15 @@ public class AllHostelsActivity extends AppCompatActivity {
             progressBar.setVisibility(View.GONE);
 
             HostelsListView.setVisibility(View.VISIBLE);
+            if (!HostelList.isEmpty()){
+                ListAdapterClass adapter = new ListAdapterClass(HostelList, context);
+                HostelsListView.setAdapter(adapter);
+            }else {
+                Toast.makeText(AllHostelsActivity.this,
+                        "Hostels List is Empty",Toast.LENGTH_SHORT).show();
+            }
 
-            ListAdapterClass adapter = new ListAdapterClass(HostelList, context);
 
-
-            HostelsListView.setAdapter(adapter);
 
         }
     }
