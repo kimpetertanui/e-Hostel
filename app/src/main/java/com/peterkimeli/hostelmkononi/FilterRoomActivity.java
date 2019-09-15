@@ -42,7 +42,7 @@ public class FilterRoomActivity extends AppCompatActivity {
     String Result ;
     ListView SubjectListView;
     ProgressDialog pDialog;
-    String HttpURL = "http://192.168.100.3:9500/filter_room.php";
+    String HttpURL = "http://192.168.43.131/HostelYangu/filter_room.php";
     String ParseResult ;
     HashMap<String,String> ResultHash = new HashMap<>();
     URL url;
@@ -236,7 +236,7 @@ public class FilterRoomActivity extends AppCompatActivity {
                             jsonObject = jsonArray.getJSONObject(i);
 
                             listString.add(jsonObject.getString("room_name").toString()) ;
-                            listString.add(jsonObject.getString("status").toString()) ;
+                            //listString.add(jsonObject.getString("status").toString()) ;
 
 
                         }
