@@ -115,6 +115,32 @@
         android:layout_toRightOf="@+id/textViewLocation"
         android:layout_toEndOf="@+id/textViewLocation"
         tools:ignore="RtlHardcoded" />
+    <TextView
+        android:text="Status "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_below="@+id/textViewLocation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/room_status"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:id="@+id/status"
+        android:layout_alignBaseline="@+id/room_status"
+        android:layout_alignBottom="@+id/room_status"
+        android:layout_toRightOf="@+id/room_status"
+        android:layout_toEndOf="@+id/room_status"
+        tools:ignore="RtlHardcoded" />
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
