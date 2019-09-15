@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="Welcome to Cervical Cancer App"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/login_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="SignIn"
+        android:textAllCaps="false"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/register_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_orange_light"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic"
+        android:typeface="serif" />
+
+</RelativeLayout>

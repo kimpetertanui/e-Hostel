@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_hostels"
+            android:icon="@drawable/ic_cancer_signs"
+            android:title="@string/hostels" />
+        <item
+            android:id="@+id/notices"
+            android:icon="@drawable/ic_cancer_types"
+            android:title="@string/notices" />
+        <item
+            android:id="@+id/nav_Complaints"
+            android:icon="@drawable/ic_cancer_stages"
+            android:title="@string/complaints" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_cancer_causes"
+                android:title="@string/about" />
+            <item
+                android:id="@+id/nav_privacy"
+                android:icon="@drawable/ic_cancer_center"
+                android:title="@string/privacy" />
+            <group>
+                <item
+                    android:id="@+id/nav_donate"
+                    android:icon="@drawable/ic_donate"
+                    android:title="@string/donate" />
+            </group>
+            <item
+                android:id="@+id/action_logout"
+                android:icon="@drawable/ic_forum"
+                android:title="@string/forum"
+                />
+        </menu>
+    </item>
+
+</menu>
