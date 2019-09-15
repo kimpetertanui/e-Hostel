@@ -23,7 +23,7 @@ public class AllHostelsActivity extends AppCompatActivity {
 
     ListView HostelsListView;
     ProgressBar progressBar;
-    String HttpUrl = "http://192.168.100.3:9500/Allhostels.php";
+    String HttpUrl = "http://192.168.43.131/HostelYangu/Allhostels.php";
     List<String> IdList = new ArrayList<>();
 
     @Override
