@@ -64,7 +64,7 @@
 
 
     <TextView
-        android:text="Room Details "
+        android:text="Price "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#fff"
@@ -91,7 +91,7 @@
 
 
     <TextView
-        android:text="Price "
+        android:text="Room Details "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#fff"
