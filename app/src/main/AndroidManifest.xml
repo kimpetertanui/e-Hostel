@@ -22,6 +22,10 @@
         <activity android:name=".ComplaintsActivity" />
         <activity android:name=".NoticesActivity" />
 <!--        <activity android:name=".ListAdapterActivity" /> -->
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".DashboardActivity"/>
+        <activity android:name=".HomeActivity"/>
         <activity android:name=".ShowSingleRecordActivity" />
         <activity android:name=".PrivacyActivity" />
         <activity android:name=".AllHostelsActivity" />
@@ -35,10 +39,10 @@
         </activity>
         <activity android:name=".WelcomeActivity" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".HomeMenuActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DashboardActivity" />
+        <activity android:name=".DashMenuActivity" />
         <activity android:name=".UserLoginActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -60,7 +60,7 @@ public class UserLoginActivity extends AppCompatActivity {
         createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(UserLoginActivity.this,HomeActivity.class);
+                Intent intent = new Intent(UserLoginActivity.this, HomeMenuActivity.class);
                 startActivity(intent);
             }
         });
@@ -102,7 +102,7 @@ public class UserLoginActivity extends AppCompatActivity {
 
                     finish();
 
-                    Intent intent = new Intent(UserLoginActivity.this, HomeActivity.class);
+                    Intent intent = new Intent(UserLoginActivity.this, HomeMenuActivity.class);
 
                     intent.putExtra(UserEmail,email);
 

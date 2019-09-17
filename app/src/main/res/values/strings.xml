@@ -19,6 +19,17 @@
     <string name="signUp">SIGN UP</string>
     <string name="already_user">Already have Account? Login here.</string>
     <string name="registered_emailid">Please enter your Registered Email Id below:</string>
+    <string name="not_having_account">Not Having an Account?</string>
+    <string name="already_having_account">Already Having an Account?</string>
+    <string name="logout">Logout</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="log_in">Log In</string>
+
+    <string name="sign_up">Sign Up</string>
+
     <string name="submit">SUBMIT</string>
     <string name="back">BACK</string>
     <string name="title_activity_home">Home</string>
@@ -42,6 +53,9 @@
     <string name="forum">Forum</string>
     <string name="action_logout">Logout</string>
     <string name="rooms">Rooms</string>
+    <string name="catholic">Around the University.\n Only for Female gender only.\n
+        Only 2 people in each room.\n Monthly rent is Ksh 3000 .\n
+        Deposit is Ksh 2000</string>
 
 
 </resources>
