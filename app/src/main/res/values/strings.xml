@@ -53,9 +53,12 @@
     <string name="forum">Forum</string>
     <string name="action_logout">Logout</string>
     <string name="rooms">Rooms</string>
-    <string name="catholic">Around the University.\n Only for Female gender only.\n
-        Only 2 people in each room.\n Monthly rent is Ksh 3000 .\n
-        Deposit is Ksh 2000</string>
-
+    <string name="confirm_payment">Confirm Payment</string>
+    <string name="catholic">Around the University.Only for Female gender. Monthly rent is Ksh 3000.Deposit is Ksh 2000</string>
+    <string name="tamaal">Around DeKut.Two People in a room .Mixed gender.Monthly Rent is Ksh 4500 and Deposit of Kshs 2500.</string>
+    <string name="classic">In Nyeri Town .Mixed gender. Monthly rent is Kshs 5000 and deposit of Ksh 2000</string>
+    <string name="batian_hostel">Dekut hostel for female only . 4 per room and semester rent is Kshs 5000</string>
+    <string name="mtkenya">Dekut hostel for male only .\n 4 per room and semester rent is Kshs 5000</string>
+    <string name="embassy">  In embassy  along Nyahururu road.\n Monthly rent is Ksh 4000 and transport is Kshs 30</string>
 
 </resources>

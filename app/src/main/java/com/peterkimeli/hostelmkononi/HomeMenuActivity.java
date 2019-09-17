@@ -19,8 +19,13 @@ import android.widget.LinearLayout;
 public class HomeMenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    CardView mycard ;
-    Intent i ;
+    CardView mycard,tamaal,batian ,classic,embassy,mtkenya;
+    Intent i;
+    Intent tam;
+    Intent bat;
+    Intent clas;
+    Intent emb;
+    Intent mk;
     LinearLayout ll;
 
     @Override
@@ -41,14 +46,56 @@ public class HomeMenuActivity extends AppCompatActivity
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close); ll = (LinearLayout) findViewById(R.id.ll);
-//        mycard = (CardView) findViewById(R.id.bankcardId);
-//        i = new Intent(this,MpesaActivity.class);
-//        mycard.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(i);
-//            }
-//        });
+        mycard = (CardView) findViewById(R.id.physics);
+        i = new Intent(this,AllHostelsActivity.class);
+        mycard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(i);
+            }
+        });
+
+        tamaal = (CardView) findViewById(R.id.profile);
+        tam = new Intent(this,AllHostelsActivity.class);
+        tamaal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(tam);
+            }
+        });
+        batian = (CardView) findViewById(R.id.setting);
+        bat= new Intent(this,AllHostelsActivity.class);
+        batian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(bat);
+            }
+        });
+        classic = (CardView) findViewById(R.id.study_material);
+        clas= new Intent(this,AllHostelsActivity.class);
+        classic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(clas);
+            }
+        });
+        embassy = (CardView) findViewById(R.id.bout);
+        emb= new Intent(this,AllHostelsActivity.class);
+        embassy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(emb);
+            }
+        });
+
+        mtkenya = (CardView) findViewById(R.id.practice);
+        mk= new Intent(this,AllHostelsActivity.class);
+        mtkenya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(mk);
+            }
+        });
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
@@ -89,6 +136,12 @@ public class HomeMenuActivity extends AppCompatActivity
 
         else if (id==R.id.action_privacy){
             Intent intent =new Intent(HomeMenuActivity.this,PrivacyActivity.class);
+            startActivity(intent);
+
+        }
+
+        else if (id==R.id.action_logout){
+            Intent intent =new Intent(HomeMenuActivity.this,LoginActivity.class);
             startActivity(intent);
 
         }

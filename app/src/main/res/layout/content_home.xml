@@ -61,7 +61,7 @@
                         android:orientation="vertical"
                         android:gravity="center">
                         <ImageView
-                            android:layout_width="100dp"
+                            android:layout_width="200dp"
                             android:layout_height="100dp"
                             android:background="@drawable/batian"
                             android:padding="10dp"/>
@@ -71,11 +71,11 @@
                             android:textStyle="bold"
                             android:layout_marginTop="10dp"
                             android:text="Catholic Hostel"/>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/lightgray"
-                            android:layout_margin="10dp"/>
+<!--                        <View-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:background="@color/lightgray"-->
+<!--                            android:layout_margin="10dp"/>-->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -101,31 +101,31 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:background="@drawable/cerclebackgroundgreen"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/catholic"
                             android:padding="10dp"
-                            android:src="@drawable/person" />
+                             />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Profile"
+                            android:text="Batian"
                             android:textStyle="bold" />
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/lightgray" />
+<!--                        <View-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:background="@color/lightgray" />-->
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Access Profile"
+                            android:text="@string/batian_hostel"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -152,27 +152,27 @@
                         android:orientation="vertical"
                         android:gravity="center">
                         <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:background="@drawable/cerclebackgroundyello"
-                            android:src="@drawable/ic_attach_money_black_24dp"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/classic"
+
                             android:padding="10dp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
                             android:layout_marginTop="10dp"
-                            android:text="Practice"/>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/lightgray"
-                            android:layout_margin="10dp"/>
+                            android:text="Classic Hostel"/>
+<!--                        <View-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:background="@color/lightgray"-->
+<!--                            android:layout_margin="10dp"/>-->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Examination"
+                            android:text="@string/classic"
                             android:padding="5dp"
                             android:textColor="@android:color/darker_gray"/>
 
@@ -193,31 +193,31 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:background="@drawable/cerclebackgroundpink"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/tamaal"
                             android:padding="10dp"
-                            android:src="@drawable/phone" />
+                             />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="Study Material"
+                            android:text="Tamaal"
                             android:textStyle="bold" />
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/lightgray" />
+<!--                        <View-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="0dp"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:background="@color/lightgray" />-->
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="Access Study related stuff"
+                            android:text="@string/tamaal"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
@@ -244,29 +244,30 @@
                         android:orientation="vertical"
                         android:gravity="center">
                         <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:background="@drawable/cerclebackgroundpurple"
-                            android:src="@drawable/phone"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/mtkenya"
                             android:padding="10dp"/>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
                             android:layout_marginTop="10dp"
-                            android:text="Setting"/>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@color/lightgray"
-                            android:layout_margin="10dp"/>
+                            android:text="Mt.Kenya"
+                            android:textStyle="bold" />
+<!--                        <View-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:background="@color/lightgray"-->
+<!--                            android:layout_margin="10dp"/>-->
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Change Setting of App"
                             android:padding="5dp"
-                            android:textColor="@android:color/darker_gray"/>
+                            android:text="@string/mtkenya"
+                            android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -286,31 +287,31 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:background="@drawable/cerclebackgroundgreen"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/sekuu"
                             android:padding="10dp"
-                            android:src="@mipmap/ic_launcher" />
+                            />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            android:text="About Us"
+                            android:text="            Embassy Hostel"
                             android:textStyle="bold" />
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:layout_margin="10dp"
-                            android:background="@color/lightgray" />
+<!--                        <View-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:layout_margin="10dp"-->
+<!--                            android:background="@color/lightgray" />-->
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="PPT"
+                            android:text="@string/embassy"
                             android:textColor="@android:color/darker_gray" />
 
                     </LinearLayout>

@@ -2,6 +2,7 @@ package com.peterkimeli.hostelmkononi;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
@@ -79,7 +80,7 @@ public class MpesaActivity extends AppCompatActivity {
 
             //TODO :: REPLACE WITH YOUR OWN CREDENTIALS  :: THIS IS SANDBOX DEMO
             LNMExpress lnmExpress = new LNMExpress( "174379", "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919",  //https://developer.safaricom.co.ke/test_credentials
-                    "1", "254724489640", "174379", "254706918505", "http://meal.shulemall.com/api", "E-HOSTEL", "Pay" );
+                    "1", "254724489640", "174379", "254799495847", "http://meal.shulemall.com/api", "E-HOSTEL", "Pay" );
 
             //This is the
             daraja.requestMPESAExpress( lnmExpress, new DarajaListener<LNMResult>() {
@@ -96,4 +97,27 @@ public class MpesaActivity extends AppCompatActivity {
             } );
         } );
     }
+
+    // .......start of backpess............
+    @Override
+    public void onResume() {
+        super.onResume();
+
+
+        ActionBar actionBar = this.getSupportActionBar();
+        actionBar.setTitle(R.string.confirm_payment);
+
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    //..............end of backpress....................
+
 }
