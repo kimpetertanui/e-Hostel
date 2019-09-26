@@ -17,7 +17,7 @@ public class NoticesActivity extends AppCompatActivity {
 
     WebView wv;
     static ProgressBar progressBar;
-    String url = "http://192.168.43.131/HostelYangu/admin/notice.html";
+    String url = "http://192.168.43.131/HostelYangu/admin/display_notice.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
